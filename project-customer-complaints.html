@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer complaints tracker | Arry Weller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Arry Weller</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container prose">
+        <p><a href="portfolio.html">← Back to portfolio</a></p>
+        <span class="tag">Dashboard</span>
+        <h1>Customer complaints tracker</h1>
+
+        <div class="project-meta">
+          <div><strong>Role</strong>Personal project</div>
+          <div><strong>Industry</strong>Customer service (sample data)</div>
+          <div><strong>Tools</strong>Excel</div>
+        </div>
+
+        <h2>The problem</h2>
+        <p>A raw export of customer complaints lists every case individually, with its product, issue, submission channel and current status. As a list it can't answer the questions a manager actually asks: how many complaints are still open, how volumes are changing week to week, and whether the backlog is growing.</p>
+
+        <h2>What I did</h2>
+        <p>I prepared the raw export into a clean working dataset, adding week, month and year columns so complaints could be grouped by the week they were received. From that I built a one-page report driven by PivotTables, with:</p>
+        <ul>
+          <li>A summary of closed, open and total complaints, with open cases highlighted in red</li>
+          <li>A stacked weekly column chart splitting each week's complaints by status</li>
+          <li>A timeline filter on week start date, so the whole report can be narrowed to any period</li>
+        </ul>
+
+        <img src="assets/images/customer-complaints.png" alt="Customer complaints tracker showing closed, open and total complaints, and a weekly stacked column chart of complaints by status from May to August 2023">
+
+        <h2>The result</h2>
+        <p>A tracker that shows at a glance where complaints are being resolved and where they are building up. In this data it makes the July spike, and the growing share of recent complaints still open, stand out immediately, which is exactly the kind of early warning a team needs to prioritise its workload.</p>
+
+        <div class="btn-row">
+          <a href="assets/files/customer-complaints.xlsx" class="btn btn-primary">Download the workbook (Excel)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Arry Weller</span>
+      <span><a href="https://www.linkedin.com/in/arry-weller-54361668">LinkedIn</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>

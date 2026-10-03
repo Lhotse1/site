@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee shop sales dashboard | Arry Weller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Arry Weller</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container prose">
+        <p><a href="portfolio.html">← Back to portfolio</a></p>
+        <span class="tag">Dashboard</span>
+        <h1>Coffee shop sales dashboard</h1>
+
+        <div class="project-meta">
+          <div><strong>Role</strong>Personal project</div>
+          <div><strong>Industry</strong>Retail / hospitality (sample data)</div>
+          <div><strong>Tools</strong>Excel · PivotTables · Slicers</div>
+        </div>
+
+        <h2>The problem</h2>
+        <p>Raw transaction-level sales data for a small coffee shop chain isn't easy to read at a glance. To spot trends in revenue, busy trading times and best-selling products, someone would otherwise need to build separate summaries by hand for every store and time period.</p>
+
+        <h2>What I did</h2>
+        <p>I built a single-page Excel dashboard driven by PivotTables and PivotCharts, with a slicer to filter every view by store location (Covent Garden, King's Cross and Moorgate). The dashboard brings together:</p>
+        <ul>
+          <li>Revenue by month, to track the overall trend</li>
+          <li>Transactions by day of week and by hour, to show when each store is busiest</li>
+          <li>Top 15 products by quantity sold and revenue</li>
+          <li>A breakdown of transactions by product category (coffee, tea, bakery, etc.)</li>
+        </ul>
+
+        <img src="assets/images/coffee-dashboard.png" alt="Coffee shop sales dashboard showing revenue by month, transactions by day and hour, top products, and a store location filter">
+
+        <h2>The result</h2>
+        <p>A single filterable view that lets anyone, without touching a formula, switch between stores and instantly see revenue trends, peak trading hours and which products are driving sales. The result is a simple, effective dashboard that helps store managers make more informed, data-driven decisions.</p>
+
+        <div class="btn-row">
+          <a href="assets/files/coffee-dashboard.xlsx" class="btn btn-primary">Download the workbook (Excel)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Arry Weller</span>
+      <span><a href="https://www.linkedin.com/in/arry-weller-54361668">LinkedIn</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>

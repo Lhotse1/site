@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC motor vehicle collision analysis | Arry Weller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Arry Weller</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container prose">
+        <p><a href="portfolio.html">← Back to portfolio</a></p>
+        <span class="tag">Reporting</span>
+        <h1>NYC motor vehicle collision analysis</h1>
+
+        <div class="project-meta">
+          <div><strong>Role</strong>Personal project</div>
+          <div><strong>Industry</strong>Public sector / open data</div>
+          <div><strong>Tools</strong>Excel</div>
+        </div>
+
+        <h2>The problem</h2>
+        <p>NYC Open Data publishes every reported motor vehicle collision in the city — over 236,000 records for January 2021 to March 2023 alone. A raw export like that is far too large to make sense of as a table; it needs to be distilled into headline figures and trends before it means anything.</p>
+
+        <h2>What I did</h2>
+        <p>I built a one-page Excel report that summarises the dataset into four key figures — total collisions, collisions involving injury or fatality ("dangerous" collisions), the share of collisions that were dangerous, and the peak hour for collisions — alongside a monthly collision volume table split by year. I added short written takeaways alongside the table to call out the trends that stood out, such as the year-on-year change in volumes and the seasonal pattern through the year.</p>
+
+        <p>Further down the report, a colour-scale heatmap breaks collisions down by day of week and hour of day, making it easy to spot the riskiest times to be on the road at a glance. A second heatmap ranks the top contributing factors by the share of collisions they cause that are classed as dangerous, highlighting which causes are not just common but disproportionately severe.</p>
+
+        <img src="assets/images/collision-analysis.png" alt="NYC Motor Vehicle Collision Analysis report showing key figures for total and dangerous collisions, share dangerous, peak hour, and a monthly collision volume table by year">
+
+        <h2>The result</h2>
+        <p>A single page that turns a quarter-million-row dataset into a handful of headline numbers, a clear monthly trend, and two heatmaps pinpointing when and why the most dangerous collisions happen — so the story in the data can be understood in seconds rather than by digging through raw records.</p>
+
+        <div class="btn-row">
+          <a href="assets/files/collision-analysis.xlsx" class="btn btn-primary">Download the workbook (Excel)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Arry Weller</span>
+      <span><a href="https://www.linkedin.com/in/arry-weller-54361668">LinkedIn</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
