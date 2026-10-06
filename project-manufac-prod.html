@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Production line efficiency and downtime | Arry Weller</title>
+  <meta name="description" content="An Excel analysis of a production line, measuring operator efficiency and using a Pareto chart to find the factors behind most downtime.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Arry Weller</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container prose">
+        <p><a href="portfolio.html">← Back to portfolio</a></p>
+        <span class="tag">Dashboard</span>
+        <h1>Production line efficiency and downtime</h1>
+
+        <div class="project-meta">
+          <div><strong>Role</strong>Personal project</div>
+          <div><strong>Industry</strong>Manufacturing (sample data)</div>
+          <div><strong>Tools</strong>Excel</div>
+        </div>
+
+        <h2>The problem</h2>
+        <p>A production line records the start and end time of every batch, which operator ran it, and any downtime along with its cause. Those logs show what happened, but not where time is being lost, which operators are falling behind, or which causes of downtime are worth fixing first.</p>
+
+        <h2>What I did</h2>
+        <p>I calculated each batch's run time and compared it with the minimum time for that product, giving an efficiency score for each operator. I then built a one-page report with:</p>
+        <ul>
+          <li>A bar chart of efficiency by operator, highlighting the lowest performer</li>
+          <li>A Pareto chart ranking downtime causes, with a running total showing which few account for most lost time</li>
+          <li>A matrix of downtime by operator and cause, with conditional formatting to pick out the problem areas</li>
+        </ul>
+
+        <img src="assets/images/manufac-prod.png" alt="Line productivity and downtime dashboard showing efficiency by operator from 61% to 67%, a Pareto chart where the top five factors account for 80% of downtime, and a matrix of downtime minutes by operator and factor with recommendations">
+
+        <h2>The result</h2>
+        <p>Overall line efficiency sits at 64%, and five causes account for 80% of downtime, led by machine adjustment. Three of those five come down to operator error, so the report recommends machine adjustment training for the team, batch change training for the lowest-scoring operator, and preventative maintenance with closer checks on inventory.</p>
+
+        <div class="btn-row">
+          <a href="assets/files/manufac-prod.xlsx" class="btn btn-primary">Download the workbook (Excel)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Arry Weller</span>
+      <span><a href="https://www.linkedin.com/in/arry-weller-54361668">LinkedIn</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
