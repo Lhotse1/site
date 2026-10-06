@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics retailer sales model | Arry Weller</title>
+  <meta name="description" content="An Excel sales model joining six CSV files into one refreshable data model, with Power Query, Power Pivot measures and an interactive dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Arry Weller</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container prose">
+        <p><a href="portfolio.html">← Back to portfolio</a></p>
+        <span class="tag">Excel model</span>
+        <h1>Electronics retailer sales model</h1>
+
+        <div class="project-meta">
+          <div><strong>Role</strong>Personal project</div>
+          <div><strong>Industry</strong>Retail (sample data)</div>
+          <div><strong>Tools</strong>Excel · Power Query · Power Pivot</div>
+        </div>
+
+        <h2>The problem</h2>
+        <p>A global retailer's data arrived as six separate CSV files covering sales, customers, products, stores and exchange rates. On their own none of them answer a business question: a sales row records its customer and product as ID numbers only, prices are held in US dollars while stores trade locally, and there is no date table to report by month or quarter.</p>
+
+        <h2>What I did</h2>
+        <p>I built a single refreshable model rather than a one-off spreadsheet. Power Query loads and cleans each file, deriving customer age and age bands and building a calendar table from the sales date range. Those tables then feed a star schema in the data model:</p>
+        <ul>
+          <li>A sales table of 62,884 line items joined to customers, products, stores and the calendar</li>
+          <li>Exchange rates linked on a combined date and currency key, so revenue can be reported in local currency as well as US dollars</li>
+          <li>Measures for total orders, revenue, average order value and average delivery time</li>
+          <li>A dashboard of KPI cards, revenue by month and by category, filtered by year and store</li>
+        </ul>
+
+        <img src="assets/images/electronics-retailer.png" alt="Sales performance dashboard showing 26,326 orders, $55.8m revenue, $2,117.89 average order value and 4.5 days average delivery time, with a revenue by month line chart, a category revenue bar chart, and year and store filters">
+
+        <h2>The result</h2>
+        <p>Six files become one model covering 26,326 orders and $55.8m of revenue, where computers alone account for $19.3m. Because the figures are measures rather than formulas written against cells, the same model answers questions at any level: a single store, one year, or the whole business. Refreshing it means replacing the source files, not rebuilding the report.</p>
+
+        <div class="btn-row">
+          <a href="assets/files/electronics-retailer.zip" class="btn btn-primary">Download the model and data (ZIP)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Arry Weller</span>
+      <span><a href="https://www.linkedin.com/in/arry-weller-54361668">LinkedIn</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
